@@ -136,10 +136,8 @@ const contenitore = document.querySelector("#container");
 icone.forEach((element) => {
 	contenitore.innerHTML +=`
 	<div class="icone">
-            <i class="${element.family} ${element.prefix + element.name}"></i>
+            <i class="${element.family} ${element.prefix + element.name}" style="color:${element.color}"></i>
             <span>${element.name}</span>
     </div>
 	`
-}
-
-);
+});
