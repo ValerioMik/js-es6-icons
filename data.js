@@ -126,12 +126,15 @@ Come possiamo usare i dati presenti nella nostra struttura dati per creare l’e
 Inizialmente può essere sufficiente stampare dei semplici div, senza alcuno stile, con all’interno l’icona e uno span con il nome
 Solamente quando la parte logica è completa, ci dedichiamo al dettaglio del css. */
 
-console.log("ciao bro");
+
 
 //1..faccio un ciclo per scorrere l?arrey degli oggetti
 //1.2 una volta prese le informazioni dagli oggetti me li stampo in un .log
 //1.3 se tutto funziona stampo sull'html l'icona con il suo span adiacente
 const contenitore = document.querySelector("#container");
+const corrispondenze = document.querySelector(".corrispondenze");
+console.log(corrispondenze);
+
 
 icone.forEach((element) => {
 	contenitore.innerHTML +=`
