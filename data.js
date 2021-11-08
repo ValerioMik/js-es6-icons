@@ -131,13 +131,12 @@ console.log("ciao bro");
 //1..faccio un ciclo per scorrere l?arrey degli oggetti
 //1.2 una volta prese le informazioni dagli oggetti me li stampo in un .log
 //1.3 se tutto funziona stampo sull'html l'icona con il suo span adiacente
-const contenitore = document.querySelector(".container")
+const contenitore = document.querySelector("#container");
 
-icone.forEach((element) =>{
-	contenitore.innerHTML +=
-	`
+icone.forEach((element) => {
+	contenitore.innerHTML +=`
 	<div class="icone">
-            <i class="${element.family} ${element.prefix}"></i>
+            <i class="${element.family} ${element.prefix + element.name}"></i>
             <span>${element.name}</span>
     </div>
 	`
